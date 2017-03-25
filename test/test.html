@@ -15,7 +15,27 @@
           buttons: [
             {
               text: 'Let\'s get started',
-              goesTo: 'firstQuestion'
+              goesTo: 'faveFood'
+            }
+          ]
+        },
+        faveFood: {
+          message: 'What is your favorite food?',
+          buttons: [
+            {
+              text: 'Pizza',
+              goesTo: 'done',
+              savesAs: 'Pizza'
+            },
+            {
+              text: 'Mac & Cheese',
+              goesTo: 'done',
+              savesAs: 'MacNCheese'
+            },
+            {
+              text: 'Tacos',
+              goesTo: 'done',
+              savesAs: 'Tacos'
             }
           ]
         }
