@@ -89,10 +89,31 @@
             },
             {
               text: 'Thoughts cannot describe...',
-              goesTo: 'done',
+              goesTo: 'someThoughts',
               savesAs: 'speechless'
             }
           ]
+        },
+        someThoughts: {
+          message: 'Do any of these do it justice?',
+          checkboxes: {
+            goesTo: 'done',
+            text: 'Next',
+            values: [
+              {
+                text: 'Magnificent',
+                savesAs: 'magnificent'
+              },
+              {
+                text: 'Wonderous',
+                savesAs: 'wonderous'
+              },
+              {
+                text: 'Amazing',
+                savesAs: 'Amazing'
+              }
+            ]
+          }
         },
         howCool: {
           message: 'How cool (10 is rockin\', 1 is just okay)?',
