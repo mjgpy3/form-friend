@@ -97,7 +97,7 @@
             },
             {
               text: 'Meh',
-              goesTo: 'done',
+              goesTo: 'moreDetails',
               savesAs: 'meh'
             },
             {
@@ -106,6 +106,13 @@
               savesAs: 'speechless'
             }
           ]
+        },
+        moreDetails: {
+          message: 'Please give more details about your "Meh"',
+          input: {
+            goesTo: 'done',
+            text: 'Done'
+          }
         },
         someThoughts: {
           message: 'Do any of these do it justice?',
