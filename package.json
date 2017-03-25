@@ -1,0 +1,19 @@
+{
+  "name": "form-friend",
+  "version": "0.0.1",
+  "description": "A friendly form generator in pure JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjgpy3/form-friend.git"
+  },
+  "author": "Michael Gilliland <mjg.py3@gmail.com> (https://twitter.com/mjgpy3)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjgpy3/form-friend/issues"
+  },
+  "homepage": "https://github.com/mjgpy3/form-friend#readme"
+}

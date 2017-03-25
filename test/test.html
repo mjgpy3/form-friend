@@ -1,0 +1,29 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h3>Test page</h3>
+    <p>Element</p>
+    <div id='my-form'>
+    </div>
+
+    <script src="../lib/formFriend.js"></script>
+    <script type="text/javascript">
+      var testGraph = {
+        friendAndEnter: {
+          message: 'Hi! Welcome to form-friend :)',
+          buttons: [
+            {
+              text: 'Let\'s get started',
+              goesTo: 'firstQuestion'
+            }
+          ]
+        }
+      };
+
+      formFriend.attach('my-form', testGraph, function (result) {
+        console.log(result);
+      });
+    </script>
+  </body>
+</html>
