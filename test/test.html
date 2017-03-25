@@ -70,34 +70,48 @@
           buttons: [
             {
               text: 'Let\'s get started',
-              goesTo: 'faveFood'
+              goesTo: 'buttonFeelings'
             }
           ]
         },
-        faveFood: {
-          message: 'What is your favorite food?',
+        buttonFeelings: {
+          message: 'What do you think of these buttons?',
           buttons: [
             {
-              text: 'Pizza',
-              goesTo: 'done',
-              savesAs: 'Pizza'
+              text: 'They\'re cool!',
+              goesTo: 'howCool',
+              savesAs: 'cool'
             },
             {
-              text: 'Mac & Cheese',
+              text: 'Meh',
               goesTo: 'done',
-              savesAs: 'MacNCheese'
+              savesAs: 'meh'
             },
             {
-              text: 'Tacos',
+              text: 'Thoughts cannot describe...',
               goesTo: 'done',
-              savesAs: 'Tacos'
+              savesAs: 'speechless'
             }
           ]
+        },
+        howCool: {
+          message: 'How cool (10 is rockin\', 1 is just okay)?',
+          number: {
+            goesTo: 'done',
+            min: 1,
+            max: 10,
+            text: 'Next'
+          }
         }
       };
 
       formFriend.attach('my-form', testGraph, function (result) {
-        console.log(result);
+        var form = document.getElementById('my-form');
+        var elem = document.createElement('p');
+
+        elem.innerHTML = 'Your answers were: ' + JSON.stringify(result);
+
+        form.appendChild(elem);
       });
     </script>
   </body>
