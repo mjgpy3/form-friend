@@ -69,7 +69,20 @@
           message: 'Hi! Welcome to form-friend :)',
           buttons: [
             {
+              text: 'Huh?',
+              goesTo: 'help'
+            },
+            {
               text: 'Let\'s get started',
+              goesTo: 'buttonFeelings'
+            }
+          ]
+        },
+        help: {
+          message: 'friend-form is a simple JS library to help make, simple walkthrough forms',
+          buttons: [
+            {
+              text: 'Let\'s do it!',
               goesTo: 'buttonFeelings'
             }
           ]
